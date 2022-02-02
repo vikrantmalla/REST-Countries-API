@@ -3,7 +3,7 @@ import { Card, CardHead, CardBody } from './CountriesCard.styled';
 const CountriesCard = ({ country }) => {
     const countryName = country.name.common;
     const population = new Intl.NumberFormat("en-GB").format(country.population);
-    const countryDetails =  countryName.split(" ").join("-");
+    const countryDetails =  countryName.split(" ").join("_");
     return (
         <>
             <Card key={country.cca3}>

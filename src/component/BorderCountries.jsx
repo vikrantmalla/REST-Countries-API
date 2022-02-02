@@ -48,7 +48,7 @@ const BorderCountries = ({ borders, countries }) => {
                 {borders ? (
                     borders.map((borderCountry, index) => {
                         return (
-                            <Link to={`/${getBorderCountryFullname(borderCountry).split(" ").join("-")}`} key={index}>
+                            <Link to={`/${getBorderCountryFullname(borderCountry).split(" ").join("_")}`} key={index}>
                                 <span key={index}>
                                     {getBorderCountryFullname(borderCountry)}
                                 </span>

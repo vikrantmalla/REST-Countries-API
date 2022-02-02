@@ -5,7 +5,7 @@ import { DetailsCard, Content, FlagWrapper, GeneralInfo, GeoInfo, MoreInfo,  Not
 const CountryDetails = ({ countries }) => {
     // console.log(countries)
     const { country } = useParams();
-    const trimmedCountry = country.replace(/-/g, " ");
+    const trimmedCountry = country.replace(/_/g, " ");
     const foundCountry = countries.find(
         (country) => country.name.common === trimmedCountry
     );
