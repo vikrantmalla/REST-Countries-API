@@ -15,7 +15,6 @@ const CountriesList = styled.div `
     }
     @media (min-width : 62em){
         grid-template-columns: repeat(4, 1fr);
-        gap: 1.5rem; 
         margin: 1rem;
     }
 `

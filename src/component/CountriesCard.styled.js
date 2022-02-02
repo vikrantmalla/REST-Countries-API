@@ -6,6 +6,10 @@ export const Card = styled.div `
     box-shadow: 0 3px 8px rgb(0 0 0 / 24%);
     border-radius: .3rem;
     cursor: pointer;
+    height: 350px;
+    @media (min-width : 42em){
+        height: 380px;
+    }
 `
 export const CardHead = styled.div `
     img {
@@ -24,12 +28,12 @@ export const CardBody = styled.div `
     h1 {
        
         font-weight: 700;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     p {
         font-weight: 300;
         span {
-            font-weight: 700;
+            font-weight: 600;
         }
     }
 `

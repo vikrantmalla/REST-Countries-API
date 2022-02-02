@@ -26,7 +26,7 @@ export const Toggle = styled.div `
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 1rem;
+    gap: .5rem;
     padding: .8rem;
     border-radius: .3rem;
     cursor: pointer;
@@ -38,6 +38,13 @@ export const Toggle = styled.div `
     }
     p {
         color: ${(props) => props.theme.text};
+        font-size: .8rem;
+        font-weight: 600;
+        @media (min-width: 42em) {
+            p{
+                font-size: 1rem;
+            }
+        }
     }
 
 `

@@ -6,7 +6,7 @@ import styled from 'styled-components'
 const Container = styled.div`
     width: 100%;
     max-width: 1400px;
-    margin: 2rem auto;
+    margin: 3rem auto;
     padding: 0 1rem;
     display: flex;
     flex-direction: column;
@@ -24,6 +24,7 @@ const ContainerHead = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin-bottom: 2rem;
     @media (min-width : 42em){
         justify-content: space-between;
         flex-direction: row;
