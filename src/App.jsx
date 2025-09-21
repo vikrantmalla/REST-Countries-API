@@ -15,7 +15,7 @@ function App() {
   const [countries, setCountries] = useState([]);
 
   const { data, isLoading, serverError } = useFetch(
-    "https://restcountries.com/v3.1/all?fields=name,flags,region"
+    "https://restcountries.com/v3.1/all?fields=name,flags,region,population,subregion,capital,tld,currencies,languages,borders"
   );
 
   //get all countries

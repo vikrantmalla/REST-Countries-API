@@ -25,14 +25,14 @@ const CountryDetails = ({ countries }) => {
                     <h1>{name.common}</h1>
                     <GeneralInfo>
                         <GeoInfo>
-                            <p><span>Nativa Name: </span>{Object.values(name.nativeName)[0].common} </p>
+                            <p><span>Native Name: </span>{name.nativeName ? Object.values(name.nativeName)[0]?.common : "N/A"} </p>
                             <p><span>Population: </span> {new Intl.NumberFormat("en-GB").format(population)}</p>
                             <p><span>Region: </span>{region}</p>
                             <p><span>Sub Region: </span>{subregion ? subregion : "none"}</p>
                             <p><span>Capital: </span>{capital ? capital : "none"}</p>
                         </GeoInfo>
                         <MoreInfo>
-                            <p><span>Top Level Domain: </span>{tld[0]}</p>
+                            <p><span>Top Level Domain: </span>{tld && tld.length > 0 ? tld[0] : "N/A"}</p>
                             <p><span>Currencies:{" "}</span>
                                 {
                                     currencies
@@ -42,7 +42,7 @@ const CountryDetails = ({ countries }) => {
                                         : "No own currency"
                                 }
                             </p>
-                            <p><span>Languages: </span>{Object.values(languages).join(", ")}</p>
+                            <p><span>Languages: </span>{languages ? Object.values(languages).join(", ") : "N/A"}</p>
                         </MoreInfo>
                     </GeneralInfo>
                     <BorderCountries borders={borders} countries={countries}/>
